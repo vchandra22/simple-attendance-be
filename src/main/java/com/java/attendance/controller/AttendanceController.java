@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
+@CrossOrigin(origins = "*")
 @RequestMapping(Constant.ATTENDANCE_API)
 public class AttendanceController {
     private final AttendanceService attendanceService;
